@@ -50,4 +50,4 @@ jobs:
           app-name: 'gitops3004'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_98170638C19745AFAD9ED4B169C1CF9A }}
-          package: '*.war'
+          package: '*.jar'

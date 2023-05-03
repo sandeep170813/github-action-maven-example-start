@@ -41,7 +41,7 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
         with:
-          name: java-app
+          name: github-action-maven-tutorial-1.0-SNAPSHOT-jar-with-dependencies.jar
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp

@@ -27,8 +27,8 @@ jobs:
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
-          name: java-app
-          path: '${{ github.workspace }}/target/*.war'
+          name: github-action-maven-tutorial-1.0-SNAPSHOT-jar-with-dependencies.jar
+          path: /home/runner/.m2/repository/org/kth/github-action-maven-tutorial/1.0-SNAPSHOT/github-action-maven-tutorial-1.0-SNAPSHOT-jar-with-dependencies.jar
 
   deploy:
     runs-on: ubuntu-latest
